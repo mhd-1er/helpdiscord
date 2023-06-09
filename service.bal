@@ -15,7 +15,7 @@ service / on new http:Listener(9090) {
         return "Hello, " + name;
     }
 }
-configurable string hrEndpoint = ?;
+configurable string hrEndpoint = https://samples.choreoapps.dev/company/hr;
 type Request record {|
 int[] employeeIds;
 |};
